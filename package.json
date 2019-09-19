@@ -6,9 +6,17 @@
   "author": "MyEtherWallet",
   "license": "ISC",
   "scripts": {
-    "dev": "gulp",
-    "dist": "gulp prep",
-    "build": "gulp build"
+    "ng": "ng",
+    "start": "node webServer.js",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot --prod"
+  },
+  "engines": {
+    "node": "10.14.1",
+    "npm": "6.10.3"
   },
   "devDependencies": {
     "@myetherwallet/mewconnect-web-client": "^1.0.9",
